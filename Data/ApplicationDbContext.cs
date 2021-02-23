@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Authentication.Models;
 
 namespace Authentication.Data
 {
@@ -12,5 +13,6 @@ namespace Authentication.Data
             : base(options)
         {
         }
+        public DbSet<Authentication.Models.Attendance> Attendance { get; set; }
     }
 }
